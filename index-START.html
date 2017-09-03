@@ -77,7 +77,7 @@ window.addEventListener('keydown', function(e){
 	var keys = document.querySelectorAll('.key');
 	
 	//Loop over those keys and add the event 'transitionend' listener to each key
-	Array.prototype.forEach.call(keys, function(el) {
+	keys.forEach.call(keys, function(el) {
 		el.addEventListener('transitionend', removeTransition);
 	})
 
